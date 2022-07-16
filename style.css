@@ -1,0 +1,478 @@
+html{
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+}
+body{
+    margin:0;
+    padding:0;
+}
+
+header{
+    width:100%;
+    font-family: 'League Spartan', sans-serif;
+    display:flex;
+    align-items: center;
+    font-weight: 700; 
+    height:70px;
+  
+}
+
+.logo{
+
+    font-size: 2em;
+    margin-left: 1em;
+}
+.x{
+    color:#1785b6;
+}
+    #primary-nav{
+       
+        position: fixed;
+        right:0;
+        top:0;
+        min-height: 100vh;
+        width:100%;
+        text-align: left;
+        background-color:white;
+        transform: translateX(100.5%);
+        padding-top: 4em;
+        transition: transform 350ms ease-in;
+
+    }
+
+    nav ul{
+        list-style-type: none;
+        margin-top: 2em;
+        padding-right: 2em;
+        flex-direction: row;
+    }
+    nav li{
+        margin:1em 3em 3em 0em;
+   
+    }
+    nav li a{
+         color:#000000;
+        text-decoration: none;
+        font-size: 1.5em;
+        
+
+
+    }
+    nav li a:hover{
+        color:#1785b6;
+        border-bottom: solid 1px black;
+        transition: .3s ease-in;
+    }
+    .toggle{
+        position: absolute;
+        right:1em;
+        top:2.5em;
+        width:30px;
+        height: 25px;
+        background-image: url("images/icon-hamburger.svg");
+        background-repeat: no-repeat;
+        background-color: white;
+        border:none;
+        z-index: 1000;
+    }
+    #primary-nav[data-visible="true"]{
+        transform:translateX(0%);
+        
+        
+    }
+
+    .toggle[aria-expanded="true"]{
+        background-image: url("images/icon-close-menu.svg");
+        position: fixed;
+    }
+    main{
+        display:flex;
+        flex-flow: column wrap;
+    }
+    .one{
+        background-image: url("images/house2small.jpg");
+        background-size: 450px 350px;
+        height:350px;
+    }
+    .text{
+        margin:1em;
+    }
+
+    h1{
+        font-size: 3.5em;
+        color:goldenrod;
+        font-weight: bolder;
+       
+    }
+    .button{
+        width:150px;
+        height:50px;
+        background-color: #2c2c2c;
+        border:none;
+        color:white;
+        font-size:1em;
+     
+
+    }
+
+    .button:hover{
+        background-color: #1785b6;
+        color:white;
+        transition: all 0.3s linear;
+
+    }
+    .welcome{
+        font-family: 'Roboto', sans-serif;
+    }
+    h2{
+        font-size: 2em;
+        margin-left: 1em;
+    }
+    .welcome p{
+        font-family: 'Abel', sans-serif;
+        font-size: 1.5em;
+        margin:1em .6em;
+    }
+    .team{
+        
+            background-image: url("images/team1.jpg");
+            background-size:cover;
+            background-repeat: no-repeat;
+            height:600px;
+            margin-bottom: 1.5em;
+
+    }
+    .team p{
+        font-size: 3em;
+        font-weight: 600;
+        margin:2em 0 1em .4em;
+    }
+    .team .button{
+        width:150px;
+        height:50px;
+        background-color: #2c2c2c;
+        border:none;
+        color:white;
+        font-size:1em;
+        margin-left: 0.8em;
+
+    }
+    .team .button:hover{
+        background-color: #1785b6;
+        color:white;
+
+        transition: all 0.3s linear;
+      
+    }
+
+    .projects h1{
+        font-size: 3.5em;
+        color:#2c2c2c;
+        font-weight: bolder;
+    
+    }
+    .projectss{
+        margin: 1em 1.5em;
+        font-family: 'Roboto', sans-serif;
+    }
+    .projectss p{
+        font-size: 2em;
+        font-weight: 700;
+
+    }
+    .project1,.project2,.project3{
+        width:100%;
+        height:200px;
+        margin:1em 0;
+    }
+    .project1{
+        background-image: url("images/house3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+       
+    }
+
+    .project2{
+        background-image: url("images/house5.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+       
+    }
+    .project3{
+        background-image: url("images/house4.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+       
+    }
+    .black{
+        background-color: #2c2c2c ;
+        height:35px;
+        width: 90px;
+        padding-top: 10px;
+        padding-left: 3px;
+        
+    }
+    .project1 a,.project2 a,.project3 a{
+        text-decoration: none;
+        color:white;
+        font-size: 1em;
+        margin-top: 1em;
+     
+    }
+    .project1 :hover, .project2 a:hover, .project3 a:hover{
+        color:#1785b6;
+
+    }
+
+
+    .view{
+        width:100%;
+        height:80px;
+        margin:1em 0;
+        color:white;
+        font-size: 1.5em;
+        background-color: #2c2c2c;
+        text-align: left;
+        padding-left: 1em;
+        border:none;
+    }
+
+    .why-us{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        background-color: #2c2c2c; 
+        color:white;
+        font-family:  'League Spartan', sans-serif;
+    
+    }
+    .why-us p{
+        font-size: 1.5em;
+        margin-left: 1em;
+    }
+    h4{
+        font-size: 2em;
+        margin-left: 1em;
+    }
+    .reasons{
+        border-top: solid 1px white;
+        margin: 3em 1.5em;
+        font-size: .8em;
+
+
+    }
+    .infrastructure,.cost,.family{
+        width:100%;
+        height:300px;
+        background-color: #414141;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        padding:0 1em;
+        margin-top: 2.6em;
+
+      
+    }
+   /* .cost:hover,.infrastructure:hover,.family:hover{
+       border:solid 2px white;
+        transform: translateY(-7%);
+        transition: .5s ease-out;
+
+    }*/
+    .heading{
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        padding: 1em 0;
+        color:#1785b6;
+       
+    }
+    .image-logo{
+        width:72px;
+        height:72px;
+        margin:1.5em 1em;
+    }
+    footer{
+        display:flex;
+        align-items: center;
+        width:100%;
+        height:100px;
+        
+        
+    }
+    .sprites{
+        width:30px;
+        height:30px;
+        display: flex;
+        margin-left: 6em;
+
+    }
+    .sprites img{
+        margin-right: 1em;
+    }
+
+
+        
+    
+    @media screen and (min-width:1270px) {
+        .logo{
+
+            font-size: 2.5em;
+          
+        }
+
+
+        #primary-nav{
+            transform: none;
+            display: flex;
+            min-height:80px;
+            width:auto;
+            padding-top:0;
+            position: absolute;
+            width:max-content;
+            top:-1.5em;
+            left:13em;
+            transition: none;
+       
+        }
+        nav ul{
+            display: flex;
+            flex-direction: row;
+
+        }
+ 
+        nav li a{
+            font-size: 1.3em;
+        }
+
+        .toggle{
+            display: none;
+        }
+
+
+
+        main{
+            display: grid;
+            grid-template-rows: 800px 420px 850px 420px 1.2fr;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: .5em;
+        }
+        .one{
+            grid-row: 1/2;
+            grid-column: 1/3;
+            background-image: url("images/house2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: auto;
+            z-index: 99999;
+
+        }
+        .text{
+            margin:3em;
+        }
+        
+    h1{
+        margin-top :7em;
+        color: goldenrod;
+        font-size: 4em;
+
+       
+    }
+    
+    .button{
+        width:150px;
+        height:50px;
+        font-size:1.1em;
+    }
+    .welcome{
+        grid-row: 2/3;
+        grid-column: 1/3;
+    }
+
+    
+    h2{
+        font-size: 3.5em;
+       
+    }
+    
+    .welcome p{
+        font-family: 'Abel', sans-serif;
+        font-size: 2em;
+        margin:1em 1em;
+    }
+    .team{
+        
+        background-image: url("images/subBig.jpg");
+        grid-row: 3/4;
+        grid-column: 1/3;
+        background-size:cover;
+        background-repeat: no-repeat;
+        height:auto;
+      
+
+    }
+    
+    .team p{
+        font-size: 3em;
+        font-weight: 600;
+        margin:2em 0 1em .4em;
+    }
+    .team .button{
+        width:150px;
+        height:50px;
+      
+    }
+    .projectss{
+        grid-row: 4/5;
+        grid-column: 1/3;
+
+    }
+    .pro{
+        display: flex;
+    }
+    .project1,.project2,.project3{
+        width:450px;
+        height:250px;
+        margin:1em .5em;
+    }
+
+    .why-us{
+        grid-row: 5/6;
+        grid-column: 1/3;
+     
+    }
+    .reasons{
+        display: flex;
+        margin: 4em 1.5em;
+
+    }
+    .cost,.infrastructure{
+        border-right: solid 1px white;
+    }
+    .cost:hover,.infrastructure:hover,.family:hover{
+        border:solid 1.5px white;
+        transform: translateY(-11%);
+        transition: .5s ease-out;
+    }
+    .image-logo{
+        width:70px;
+        height:70px;
+        margin:1em 1em;
+    }
+    footer{
+    height:75px;
+
+    justify-content: space-between;    
+    }
+    .sprites{
+        margin-left: 0;
+        margin-right: 7em;
+    }}
+
+
+
+
+    
+
+
+    
+
